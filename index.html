@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Airlines - Flight Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-bg">
+    <h1>Indian Airlines Flight Booking</h1>
+  </header>
+  <main>
+    <section id="description">
+        <h2>Welcome to Indian Airlines!</h2>
+        <p>Plan your next journey with ease. Search for available flights by providing your departure city, destination, and preferred travel date.</p>
+        <p>Our user-friendly interface allows you to find the best flight options quickly and efficiently. Start exploring now!</p>
+      </section>  
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" required>
+      </div>
+      <div class="form-group">
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Search Flights</button>
+      </div>
+    </form>
+    <div id="results"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
